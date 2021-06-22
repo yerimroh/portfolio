@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+    <!-- Head -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="./script.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/jquery.ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js" integrity="sha512-I0VFyPo7hdM7YrEbQ0pvX4bX2904k0+B19u/xBrPrQoMprfcSnIDfGFD8kP52GbAhwtDjkEVhXlQvj8+vkJyew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js" integrity="sha512-/8phkpsAzxsbuX18zNkQ2gCq4Q5JsWoPo1jHLDeZorPUHRtx9YJxpdk+os05oDhPJVCNzA2/NMl4rmJyQ+6Fvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js" integrity="sha512-ht40uOoiTef4nKq0THVzjIGh3VS108J577LVVgNXnQLXza3doXjoM3owin2vd+Hm6w88k12RIrePIVY2WNzz6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+
+    <!-- Body -->
+    <body class = "website">
+       
+        <div class = "header">
+            <!-- menus -->
+            <div class = "menu-box">
+                <a class = "menu-items" id = "menu1" href="#about-me"> About Me </a>
+                <a class = "menu-items" id = "menu2" href="#projects"> Projects </a>
+                <a class = "menu-items" id = "menu3" href="#contact-me"> Contact </a>
+            </div>
+
+            
+            <!-- Name -->
+                <div id="my-name" style="background-color: transparent;">
+                    <svg width="100%" height="100%">
+                    <defs>
+                        <style>
+                    @import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
+                    </style>
+                        
+                    </defs>
+                                
+                    <rect x="0" y="0" width="100%" height="100%" fill="url(#polka-dots)"> </rect>
+                    
+                <text x="50%" y="60%"  text-anchor="middle"  >
+                    Yerim Roh
+                </text>
+                </svg>
+                </div>
+
+            <!-- clouds -->
+            <section class = "clouds">
+                <img class = "cloud1" src="assets\cloud.png">
+                <img class = "cloud2" src="assets\cloud2.png">
+                <img class = "cloud3" src="assets\cloud2.png">
+            </section>
+        </div>
+ 
+
+        <!-- about me -->
+        <div id ="about-me"> 
+            <h3 id = "title"> About Me </h3>
+            <p id = "description"> Student at University of Georgia <br> Year of 2023 <br> Computer Science <br>
+            <br> Enjoy drawing & <a href="https://yerimroh.wixsite.com/portfolio/design" style="text-decoration: none;"> designing </a>  <br> Interested in web programming and application development! </p>
+            <br> 
+        </div>
+        <br>
+        <br>
+
+        <!-- work experience -->
+        <div id = "work-experience" class = "work-experience"> 
+            <h3 id = "title"> Work Experience </h3>
+            <p id = "description"> <p style="text-align: left; padding-left: 20vw;"> <strong> IT help Intern </strong> </p> <p style="text-align: right; padding-right: 20vw;"> June 2021 ~ August 2021  </p> <p style="text-align: left; padding-left: 20vw;"> <br> Kumho Tire USA  </p></p>
+            <p id = "description"> <p style="text-align: left; padding-left: 20vw;"> <strong> Science Peer Tutor </strong> </p> <p style="text-align: right; padding-right: 20vw;"> Feb 2021 ~ Present  </p> <p style="text-align: left; padding-left: 20vw;"> <br> University of Georgia  </p> </p>
+        </div>
+
+        <!-- projects/work experiences -->
+        <div id = "projects" class = "projects element-to-hide">
+            <h3 id = "title"> Projects </h3> <br> 
+
+            <section id = "project1" data-aos="fade-up">
+                <video width = "400" height = "240" controls > 
+                    <source src = "assets\galleryapp.mp4" type = "video/mp4" > </source>
+                </video>
+                <p id = "description"> <strong style="font-size: 20px;"> Gallery App </strong> <br> 
+                    uses the iTunes open API to search and collect the information of
+                    songs as json and read off the json to display the album cover images 
+                    in an organized tile 
+                    <br> <strong> <i> #JavaFX #API </i> </strong> </p>               
+            </section>
+            
+
+            <section id = "project2" data-aos="fade-up">
+                <p id = "description"> <strong style="font-size: 20px;"> Music&Lyrics App </strong> <br> : uses multiple apis such as the youtube api; when given the song title and artist name, 
+                    automatically searches the keywords on youtube and pulls the audio from it. Also, the lyrics of the song 
+                    is also pulled along with the audio and is displayed at the bottom so that the user can follow along while listening.
+                    <br> <strong> <i> #React.js #Node.js </i> </strong> </p>        
+                <video width = "400" height = "240" controls >
+                    <source src = "assets\musicapp.mp4" type = "video/mp4" > </source>
+                </video>
+                          
+            </section>
+
+            
+            <section id = "project3" data-aos="fade-up">
+                <video width = "400" height = "240" controls >
+                    <source src = "assets\snakegame.mp4" type = "video/mp4" > </source>
+                </video>
+                <p id = "description"> <strong style="font-size: 20px;"> Snake Game </strong> <br>
+                    A clone for the well-known snake game. User can press the arrow keys on their keyboards to move the snake around
+                    and obtain the apple that appears at a random location to increase its length. Game over when the snake body collide with the 
+                    any of the four edges or its own body. <br> <strong> <i> #Python #Pygame </i> </strong> </p>
+            </section>
+        </div>
+        <br>
+        <br>    
+
+
+        <!-- contact me -->
+        <div id = "contact-me" style="font-size: 10px;">
+            <h3 id = "title" style="font-family: bitt; font-size: 30px;"> Contact me </h3>
+            <p style="font-family: Stardust; font-size: 15px;"> email: yerimmie1125@gmail.com <br> github: <a href="https://github.com/yerimroh"> Click </a></p>
+        </div>
+        
+       
+       
+            
+
+        <!-- init the scroll action -->
+        <script>
+            AOS.init();
+        </script>
+    </body>
+
+</html>

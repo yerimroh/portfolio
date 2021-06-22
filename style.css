@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+
+body {
+    height: auto;
+    width: 100%;
+
+    background: rgb(245, 239, 239);
+    scroll-behavior: smooth;
+    max-width: 1100px;
+    margin:auto;
+    overflow:auto;
+
+    align-items: center;
+    text-align: center;
+   }
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+
+    background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgb(83, 129, 255) 0%, rgb(226, 144, 178) 100%) no-repeat;
+    background-size:cover;
+      
+    overflow: hidden;
+
+    margin-bottom: 3rem;
+}
+
+.about-me {
+    margin-top: 2rem;
+    font-family: "Stardust";
+}
+
+
+.menu-box {
+    position: relative;
+
+    left: center;
+
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.menu-items {
+    font-family: "bitt";
+    font-size: 17px;
+    font-weight: lighter;
+    text-decoration: none;
+
+    color: rgba(255, 255, 255, 0.527);
+    background-color: #00000000;
+    width: 90px;
+    height: 60px;
+    margin: 30px;
+    align-self: center;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+.menu-items:hover {
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.966);
+}
+
+
+#my-name {
+    font-family: "bitt";
+    font-size: 60px;
+    font-weight: lighter;
+    letter-spacing: 0.5em;
+    max-height: 20%;
+    
+    text-align: center;
+    position: relative;
+
+    background-color: rgba(255, 255, 255, 0);
+
+    stroke-width: 3;
+    animation: textAnimate 4s infinite alternate;
+}
+
+
+#about-me h3 {
+    font-family: "bitt";
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 30px;
+}
+
+#about-me p {
+    font-family: "Stardust";
+    font-size: 15px;
+    padding: 1rem;
+}
+
+
+
+.projects {
+    font-family: "bitt";
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 30px;
+}
+
+.projects > section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 3rem;
+}
+
+.projects #project2 > video { 
+    margin-top: 1rem;
+    text-align: right;
+}
+
+
+#title {
+    font-family: bitt; 
+    font-size: 30px;
+}
+
+#description {
+    font-family: "Stardust";
+    font-size: 13px;
+    padding: 1rem;
+}
+
+@media (max-width: 700px) {
+    .projects section {
+        display: block;
+    }
+}
+
+.clouds {
+     position: relative;
+}
+
+.cloud1 {
+    position: absolute;
+    top: 0%;
+    left: 30%;
+
+    width: 700px;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    #my_name {
+      animation-name: wipe-enter;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+    }
+    
+    .header {
+        animation-name: wipe-enter;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+    }
+  }
+
+
+
+@keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+}
+
+
+@-webkit-keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+}
+
+
+@keyframes moveCloud1 {
+    0% {
+        left: -20vh;
+        top: 40vh;
+    } 100% {
+        left: -80vh;
+        top:40vh;
+    }
+}
+
+
+@keyframes backgroundRotate {
+    from{transform:rotate(0deg)}
+    to{transform:rotate(360deg)}
+}
+
+
+@keyframes textAnimate {
+    0% {
+      stroke-dasharray: 0 50%;
+      stroke-dashoffset:  20%;
+      fill:hsla(0, 0%, 100%, 0.123)
+  
+    }
+    
+    100% {
+      stroke-dasharray: 50% 0;
+      stroke-dashoffstet: -20%;
+      fill: rgba(255, 255, 255, 0.795)
+    }
+}
+
+@font-face {
+    font-family: "VideoDames";       
+    src: url("./fonts/VideoDames.ttf");
+  }
+
+@font-face {
+    font-family: "bitt";       
+    src: url("fonts/bitt.ttf");
+}
+
+@font-face {
+    font-family: "Stardust";       
+    src: url("fonts/PFStardust.ttf");
+}
+
