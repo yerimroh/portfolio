@@ -35,7 +35,8 @@ body {
 
 .about-me {
     margin-top: 2rem;
-    font-family: "Stardust";
+    font-family: "bitt";
+
 }
 
 
@@ -100,8 +101,9 @@ body {
 }
 
 #about-me p {
-    font-family: "Stardust";
-    font-size: 15px;
+    font-family: "bitt";
+
+    font-size: 20px;
     padding: 1rem;
 }
 
@@ -138,9 +140,18 @@ body {
 }
 
 #description {
-    font-family: "Stardust";
-    font-size: 15px;
-    padding: 1rem;
+    font-size: 18px;
+    padding: 5px;
+    font-family: "bitt";
+
+    
+}
+
+#project_desc {
+    font-size: 17px;
+    padding: 5px;
+    text-align:left;
+    line-height: 25px;
 }
 
 @media (max-width: 700px) {

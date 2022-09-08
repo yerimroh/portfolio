@@ -71,6 +71,14 @@
         <div id = "work-experience" class = "work-experience" style="padding-bottom: 30vh;"> 
             <h3 id = "title"> Work Experience </h3>
             <p id = "description"> 
+                <p id = "description" style="text-align: left; padding-left: 10vw;"> <strong> TDP Summer Intern, AT&T </strong> </p> 
+                <p id = "description"  style="text-align: right; padding-right: 10vw;"> June 2022 ~ August 2021  </p> 
+                <br> <li id = "description"> Added two new fully functioning pages onto on the internal company website that <br> allows workers to provide retailer reviews as
+                    a full-stack web developer using Django and Angular framework. </li> 
+                <li id = "description"> Created several new tables to the company's database and a REST api accordingly. </li>
+                <li id = "description"> Embelished the frontend side of the website to enhance better user experience. </li>
+            </p>
+            <p id = "description"> 
                 <p id = "description" style="text-align: left; padding-left: 10vw;"> <strong> IT Assist Intern, Kumho Tire USA </strong> </p> 
                 <p id = "description"  style="text-align: right; padding-right: 10vw;"> June 2021 ~ August 2021  </p> 
                 <br> <li id = "description" > Attended cross meetings and communicated with colleagues of different fields, <br> including the managers, network engineers, and security specialists. </li> 
@@ -91,21 +99,39 @@
         <!-- projects/work experiences -->
         <div id = "projects" class = "projects element-to-hide" style="padding-bottom: 30vh;">
             <h3 id = "title"> Projects </h3> <br> 
+            <section id = "project2" data-aos="fade-up">
+                
+                <p id = "project_desc"> <strong style="font-size: 20px;"> Cinema E Booking Application </strong> <br> 
+                    : a full-stack project that mimics the functionalities of a cinema booking website. <br> <br>
+                    
+                        - The application reads off movie informations from the backend(database) and let the user 'book' for seats/tickets. <br> 
+                        - A user can newly register for an account, and edit their personal information after signing in. <br> 
+                        - A user can also log in as an admin, add new movies, schedule for a show, add promotion codes, and make changes to the ticket prices.
+
+                    
+                    <br> <strong> <i> #Java #SpringBoot #MySQL #html #css #js </i> </strong> </p>
+                    <video width = "400" height = "240" controls > 
+                        <source src = "assets\cinema.mp4" type = "video/mp4" > </source>
+                    </video>               
+            </section>
+
 
             <section id = "project1" data-aos="fade-up">
                 <video width = "400" height = "240" controls > 
                     <source src = "assets\galleryapp.mp4" type = "video/mp4" > </source>
                 </video>
-                <p id = "description"> <strong style="font-size: 20px;"> Gallery App </strong> <br> 
-                    uses the iTunes open API to search and collect the information of
+                <p id = "project_desc"> <strong style="font-size: 20px;"> Gallery App </strong> <br> 
+                    : an application that makes use of the iTunes open API to search and collect the information of
                     songs as json and read off the json to display the album cover images 
-                    in an organized tile 
+                    in an organized tile.
                     <br> <strong> <i> #JavaFX #API </i> </strong> </p>               
             </section>
+
+  
             
 
             <section id = "project2" data-aos="fade-up">
-                <p id = "description"> <strong style="font-size: 20px;"> Music&Lyrics App </strong> <br> : uses multiple apis such as the youtube api; when given the song title and artist name, 
+                <p id = "project_desc"> <strong style="font-size: 20px;"> Music&Lyrics App </strong> <br> : uses multiple apis such as the youtube api; when given the song title and artist name, 
                     automatically searches the keywords on youtube and pulls the audio from it. Also, the lyrics of the song 
                     is also pulled along with the audio and is displayed at the bottom so that the user can follow along while listening.
                     <br> <strong> <i> #React.js #Node.js </i> </strong> </p>        
@@ -120,7 +146,7 @@
                 <video width = "400" height = "240" controls >
                     <source src = "assets\snakegame.mp4" type = "video/mp4" > </source>
                 </video>
-                <p id = "description"> <strong style="font-size: 20px;"> Snake Game </strong> <br>
+                <p id = "project_desc"> <strong style="font-size: 20px;"> Snake Game </strong> <br>
                     : A clone for the well-known snake game. User can press the arrow keys on their keyboards to move the snake around
                     and obtain the apple that appears at a random location to increase its length. Game over when the snake body collide with the 
                     any of the four edges or its own body. <br> <strong> <i> #Python #Pygame </i> </strong> </p>
@@ -128,7 +154,7 @@
 
 
             <section id = "project2" data-aos="fade-up">
-                <p id = "description"> <strong style="font-size: 20px;"> To-do List </strong> <br> 
+                <p id = "project_desc"> <strong style="font-size: 20px;"> To-do List </strong> <br> 
                     : A Simple To-Do List app with GUI(Graphic User Interface). User can form their to-do list. Task description is recorded&saved along with the due date (chosen with the calendar widget).
                     The list can be saved via the 'save' option on the menu bar, and these saved data can be retrieved even when the program closes out and turned on back again.
                     Items on the list can always be added or deleted. Double-clicking on the item removes a task from the list.
